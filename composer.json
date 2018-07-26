@@ -1,7 +1,7 @@
 {
     "name": "vmpublishing/lazy_logger",
     "description": "logging class proxy, that delays the instantiation to the actual logger, until there is something to log. using psr-3 and psr-11",
-    "version": "0.0.1",
+    "version": "1.0.0",
     "keywords": [
         "logging",
         "performance",
