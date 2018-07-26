@@ -1,0 +1,28 @@
+<?php xmlversion = "1.0"encoding = "UTF-8";?>
+<phpunit backupGlobals="false"
+  backupStaticAttributes="false"
+  colors="true"
+  convertErrorsToExceptions="true"
+  convertNoticesToExceptions="true"
+  convertWarningsToExceptions="true"
+  processIsolation="false"
+  stopOnFailure="false"
+  syntaxCheck="true"
+>
+
+  <php>
+    <env name="APPLICATION_ENV" value="continuous_integration" force="true" />
+  </php>
+
+  <testsuites>
+    <testsuite name="Image Processing Test Suite">
+      <directory>./tests</directory>
+    </testsuite>
+  </testsuites>
+
+  <filter>
+    <whitelist>
+      <directory suffix=".php">./src</directory>
+    </whitelist>
+  </filter>
+</phpunit>
